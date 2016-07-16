@@ -1,0 +1,81 @@
+rank_features:
+salary,to_messages,deferral_payments,total_payments,exercised_stock_options,bonus,restricted_stock,shared_receipt_with_poi,restricted_stock_deferred,total_stock_value,expenses,loan_advances,from_messages,other,from_this_person_to_poi,director_fees,deferred_income,long_term_incentive,from_poi_to_this_person,poi_connect,ratio_from_poi,ratio_to_poi,ratio_poi_connect
+features score:
+15.8060900874,2.60677186644,0.00981944641905,8.962715501,9.95616758208,30.6522823057,8.051101897,10.6697373596,0.679280338952,10.814634863,4.31439557308,7.03793279819,0.434625706635,3.19668450433,0.105897968337,1.64109792617,8.49349703055,7.53452224003,4.93930363951,2.64273164064,0.313956118156,2.55531334227,2.64273164064
+top_features:
+salary,exercised_stock_options,bonus,shared_receipt_with_poi,total_stock_value
+features score:
+15.8060900874,9.95616758208,30.6522823057,10.6697373596,10.814634863
+Nearest Neighbors
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.33      0.50        39
+        1.0       0.16      1.00      0.28         5
+
+avg / total       0.90      0.41      0.47        44
+
+Linear SVM
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.10      0.19        39
+        1.0       0.12      1.00      0.22         5
+
+avg / total       0.90      0.20      0.19        44
+
+RBF SVM
+             precision    recall  f1-score   support
+
+        0.0       0.89      1.00      0.94        39
+        1.0       0.00      0.00      0.00         5
+
+avg / total       0.79      0.89      0.83        44
+
+Decision Tree
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.38      0.56        39
+        1.0       0.17      1.00      0.29         5
+
+avg / total       0.91      0.45      0.53        44
+
+Random Forest
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.15      0.27        39
+        1.0       0.13      1.00      0.23         5
+
+avg / total       0.90      0.25      0.26        44
+
+AdaBoost
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.46      0.62        39
+        1.0       0.16      0.80      0.27         5
+
+avg / total       0.86      0.50      0.58        44
+
+Naive Bayes
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.08      0.14        39
+        1.0       0.12      1.00      0.22         5
+
+avg / total       0.90      0.18      0.15        44
+
+GradientBoostingClassifier
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.36      0.53        39
+        1.0       0.17      1.00      0.29         5
+
+avg / total       0.91      0.43      0.50        44
+
+GridSearchCV  DecisionTreeClassifier:
+             precision    recall  f1-score   support
+
+        0.0       1.00      0.13      0.23        39
+        1.0       0.13      1.00      0.23         5
+
+avg / total       0.90      0.23      0.23        44
+
+MCC = 0.128205128205
